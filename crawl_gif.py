@@ -83,7 +83,7 @@ def crawl_image(url_pre, page_num, url):
 
 #爬100页分页
 if __name__ == '__main__':
-    url_pre = 'http://t66y.com/'
+    url_pre = 'http://****.com/'
     num_min = 1
     num_max = 100
 
