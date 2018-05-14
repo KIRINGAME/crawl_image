@@ -83,13 +83,15 @@ def crawl_image(url_pre, page_num, url):
 
 #爬100页分页
 if __name__ == '__main__':
-    url_pre = 'http://****.com/'
+    url_pre = 'http://t66y.com/'
     num_min = 1
     num_max = 100
 
     url_list_pre = url_pre+'thread0806.php?fid=7&search=&page='
 
     for i in range(num_min, num_max):
+        print("*"*10+"page_"+str(i))
         url = url_list_pre + str(i)
         crawl_image(url_pre, "page_"+str(i), url)
+    print("*"*10+"end")
 
